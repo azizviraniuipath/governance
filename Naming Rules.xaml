@@ -106,12 +106,12 @@
       <AssemblyReference>UiPath.Platform</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Naming_Rules" sap:VirtualizedContainerService.HintSize="496,627.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Naming_Rules" sap:VirtualizedContainerService.HintSize="496,748.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="str_NewVariable" />
       <Variable x:TypeArguments="sd:DataTable" Name="dt_Variable" />
       <Variable x:TypeArguments="x:String" Name="str_NonPrivateVariable" />
-      <Variable x:TypeArguments="x:String" Name="newVariable" />
+      <Variable x:TypeArguments="x:String" Name="newValue" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -141,5 +141,13 @@
         <InArgument x:TypeArguments="x:String" x:Key="String_NonPrivate_Value">[str_NonPrivateVariable]</InArgument>
       </ui:AddLogFields.Fields>
     </ui:AddLogFields>
+    <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_4">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[newValue]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">test</InArgument>
+      </Assign.Value>
+    </Assign>
   </Sequence>
 </Activity>
